@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In to Shop</title>
+  </head>
+  <link rel="stylesheet" href="index.css">
+  <body>
+    <div id="container-form">
+      <h1>Become a Member</h1>
+      <h4>Create your member profile and get first access to the very best of products, inspiration and community.</h4>
+      <form class="shop-form" action="#" method="post">
+        <div id="name-input" class="input-container">
+          <div class="input-icon">
+            <img src="user.png" alt="account icon" width="16px">
+          </div>
+          <input class="input-field" type="text" name="nama" placeholder="Full name" required>
+        </div>
+
+        <div id="email-input" class="input-container">
+          <div class="input-icon">
+            <img src="email.png" alt="account icon" width="16px">
+          </div>
+          <input class="input-field" type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div id="password-input" class="input-container">
+          <div class="input-icon">
+            <img src="key.png" alt="account icon" width="16px">
+          </div>
+          <input class="input-field" type="password" name="email" placeholder="Password" required>
+        </div>
+
+        <div id="password-confirm-input" class="input-container">
+          <div class="input-icon">
+            <img src="key.png" alt="account icon" width="16px">
+          </div>
+          <input class="input-field" type="password" name="email" placeholder="Confirm Password" required>
+        </div>
+
+        <div id="term-aggreement">
+          <input id="agreement-check" type="checkbox" name="aggreement" value="aggreement" required>
+          <p id="agreement-text">By creating an account, you agree to Privacy Policy and Terms of Use.</p>
+        </div>
+
+        <div id="submit-button-container" class="input-container">
+          <button type="submit" id="submit-btn">JOIN US</button>
+        </div>
+
+      </form>
+      <p id="have-account">Already joined? <a href="#">Sign In</a> </p>
+    </div><!--container-->
+
+    <script src="index.js"></script>
+  </body>
+</html>

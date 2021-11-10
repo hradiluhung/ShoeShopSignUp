@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;700&display=swap');
+
+:root{
+  --grey : #e5e5e5;
+  --blue : #0096d3;
+  --black : #191919;
+  --orange : #CC9933;
+  --darker-orange : #BA8320;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+body{
+  background:  var(--black);
+}
+
+body::after{
+   content: "";
+   background:black url('sepatu.jpg') center center no-repeat;
+   background-size: cover;
+   opacity: 0.2;
+   top: -200px;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+#container-form{
+  width: 400px;
+  height: 550px;
+  margin: 90px auto 0;
+  padding: 20px;
+}
+
+#container-form h1, #container-form h4{
+  text-align: center;
+}
+
+#container-form h1{
+  font-weight: bold;
+}
+
+#container-form h4{
+  font-weight: lighter;
+  margin: 10px 0 40px;
+}
+
+.input-container{
+  margin: 20px 0;
+  background: rgb(255,255,255, 0.2);
+  width: inherit;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.input-icon{
+  text-align: center;
+  line-height: 45px;
+  float: left;
+  width: 40px;
+  height: inherit;
+}
+
+.input-field{
+  height: inherit;
+  width: 320px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.input-field:focus{
+  outline: none !important;
+}
+
+input::placeholder{
+  color: white;
+  opacity: 0.6;
+}
+
+input:-webkit-autofill{
+  font-size: 16px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white !important;
+}
+
+#name-input img, #email-input img{
+  margin-left: 5px;
+}
+
+input#agreement-check{
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 3px 10px 10px 0;
+}
+
+#term-aggreement{
+  margin: 0 auto;
+  width: 330px;
+}
+
+#agreement-text{
+  font-size: 14px;
+  text-align: justify;
+}
+
+#submit-btn{
+  background: var(--orange);
+  border: none;
+  border-radius: inherit;
+  width: 360px;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+#submit-btn:hover{
+  cursor: pointer;
+  background: var(--darker-orange);
+}
+
+#have-account{
+  text-align: center;
+}
